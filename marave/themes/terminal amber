@@ -1,0 +1,11 @@
+[General]
+font=@Variant(\0\0\0@\0\0\0\x16\0\x43\0o\0u\0r\0i\0\x65\0r\0 \0N\0\x65\0w@\"\0\0\0\0\0\0\xff\xff\xff\xff\x5\x1\0\x32\x10)
+fontsize=9
+click=@Invalid()
+station=@Invalid()
+bgcolor=#000000
+background=@Invalid()
+buttonstyle=0
+editoropacity=0
+lang=@Invalid()
+fontcolor=#ffff52

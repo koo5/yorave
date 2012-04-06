@@ -1,0 +1,15 @@
+[General]
+font=@Variant(\0\0\0@\0\0\0\x18\0\x46\0i\0x\0\x65\0\x64\0 \0[\0S\0o\0n\0y\0]@(\0\0\0\0\0\0\xff\xff\xff\xff\0\x1\0\x32\x10)
+fontsize=12
+click=@Invalid()
+station=http://207.200.96.225:8020
+bgcolor=@Invalid()
+background=118222-Just_Green_Curls.svgz
+fontcolor=#ffffff
+buttonstyle=0
+editoropacity=0
+lang=@Invalid()
+x=280
+y=128
+w=688
+h=629

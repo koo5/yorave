@@ -1,0 +1,136 @@
+/* The main window */
+#Main {
+    background-color: palette(dark);
+}
+
+/* The editor widget */
+QPlainTextEdit {
+    background-color: transparent;
+}
+
+/* Popup menu for the editor */
+QMenu { 
+    background-color: palette(window);
+    border: 1px solid gray;
+}
+
+/* The "menu" buttons */
+FunkyButton {
+    background-color: palette(window);
+    border: 1px solid palette(dark);
+    padding: 2px 2px 2px 2px;
+    min-width: 12px;
+    min-height: 12px;
+}
+
+FunkyButton:hover {
+    border: 1px solid palette(dark);
+}
+
+FunkyButton:pressed {
+    background-color: palette(dark);
+}
+
+/* Font selector */
+QFontComboBox {
+    padding: 0;
+    margin: 0;
+}
+
+/* The notification area below the editor */
+FunkyStatusBar {
+    border: 1px solid palette(dark);
+    border-radius: 3px;
+    padding: 5px 4px 3px 4px;
+    background-color: palette(window);    
+}
+
+/* This is the main window */
+
+MainWidget {
+    border: 0px solid palette(window);
+}
+
+/* They are in the prefs widget */
+
+#Form QComboBox {
+    min-width: 15em;
+    max-width: 15em;
+}
+
+#Form QRadioButton {
+}
+
+/* These are all the buttons in the 'menu' */
+
+#Font {
+}
+
+#Size {
+}
+
+#File {
+}
+
+#Bg {
+}
+
+#Click {
+}
+
+#Music {
+}
+
+#Options {
+}
+
+#Quit {
+}
+
+#FontColor {
+}
+
+#Smaller {
+}
+
+#Default {
+}
+
+#Larger {
+}
+
+#Open {
+}
+
+#Save {
+}
+
+#SaveAs {
+}
+
+#PreviousBG {
+}
+
+#NextBG {
+}
+
+#ColorBG {
+}
+
+#PreviousClick {
+}
+
+#NextClick {
+}
+
+#NoClick {
+}
+
+#PreviousMusic {
+}
+
+#NextMusic {
+}
+
+#NoMusic {
+}

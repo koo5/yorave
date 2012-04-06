@@ -1,0 +1,3 @@
+http://207.200.96.225:8020
+http://scfire-mtc-aa06.stream.aol.com:80/stream/1018
+http://sc6.myshoutserver.com:8134/

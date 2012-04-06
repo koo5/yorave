@@ -1,0 +1,11 @@
+[General]
+font=@Variant(\0\0\0@\0\0\0\x14\0\x44\0r\0o\0i\0\x64\0 \0S\0\x61\0n\0s@\"\0\0\0\0\0\0\xff\xff\xff\xff\x5\x1\0\x32\x10)
+fontsize=9
+click=thozi_daClick.wav
+station=http://207.200.96.225:8020
+bgcolor=@Invalid()
+background=Winter Landscape Classic.jpg
+buttonstyle=0
+editoropacity=19
+lang=@Invalid()
+fontcolor=#000000

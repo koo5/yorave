@@ -1,0 +1,15 @@
+[General]
+font=@Variant(\0\0\0@\0\0\0\"\0\x44\0r\0o\0i\0\x64\0 \0S\0\x61\0n\0s\0 \0[\0M\0i\0s\0\x63\0]@\"\0\0\0\0\0\0\xff\xff\xff\xff\x5\x1\0\x32\x10)
+fontsize=9
+click=@Invalid()
+station=@Invalid()
+bgcolor=@Invalid()
+background=Dutch winter landscape.jpg
+buttonstyle=0
+lang=@Invalid()
+editoropacity=5
+fontcolor=#ffffff
+x=280
+y=112
+w=823
+h=645

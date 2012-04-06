@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Marave
+GenericName=Text Editor
+Exec=marave-editor
+Comment=A text editor whose goal is to help you focus on writing
+Icon=accessories-text-editor
+Type=Application
+Terminal=false
+Categories=Qt;Utility;TextEditor;
+MimeType=text/plain;
+
