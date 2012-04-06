@@ -1276,7 +1276,7 @@ class MainWidget (QtGui.QGraphicsView):
             self.saveEditorGeometry()
         #self.changing=True
 
-    def scenechanged(self,region):
+    def scenerectchanged(self,region):
         if not self.changing:
             self.changing=True
             # See if the user dragged the editor
@@ -1423,7 +1423,7 @@ class MainWidget (QtGui.QGraphicsView):
     def init(self):
         '''Initialization stuff that can really wait a little, so the window
         appears faster'''
-        self._scene.changed.connect(self.scenechanged)
+        self._scene.sceneRectChanged.connect(self.scenerectchanged)
         
         # Event filters for showing/hiding buttons/cursor
         self.editor.installEventFilter(self)
