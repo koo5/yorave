@@ -24,10 +24,10 @@ class rst2pdf(Plugin):
         f.close()
         
         # FIXME: unsafe
-        # FIXME: show output of the process somewhere
+        # FIXME: show output of the process somewhere ✓
         try:
             self.client.notify('Running rst2pdf')
-            subprocess.check_call('rst2pdf %s'%self.tmpf.name, shell=True)
+            print subprocess.check_output('rst2pdf %s'%self.tmpf.name, shell=True)
         except subprocess.CalledProcessError:
             #FIXME: show error dialog
             return

@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 #-*- coding: utf-8 -*-
 
 
@@ -19,7 +21,7 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-import os, sys, codecs, re, optparse
+import os, sys, signal, codecs, re, optparse
 from functools import partial
 
 if hasattr(sys, 'frozen'):
@@ -48,7 +50,7 @@ except ImportError:
     except ImportError:
         pass
 
-sys.path.append(PATH)
+sys.path.insert(0, PATH)
 from plugins.plugins import Plugin
 
 # Syntax highlight support
@@ -1431,6 +1433,8 @@ class MainWidget (QtGui.QGraphicsView):
             b.installEventFilter(self)
         self.editor.document().modificationChanged.connect(self.setWindowModified)
 
+def sigint(signal,frame):
+    QtCore.QCoreApplication.instance().exit()
 
 def main():
 
@@ -1503,6 +1507,9 @@ def main():
     if args:
         load=lambda: window.editor.open(args[0])
         QtCore.QTimer.singleShot(10,load)
+    
+#    signal.signal(signal.SIGINT, lambda signal,frame : app.exit())#SIGSEGV, i wasnt looking for you...
+    signal.signal(signal.SIGINT, sigint)
     
     # It's exec_ because exec is a reserved word in Python
     sys.exit(app.exec_())
