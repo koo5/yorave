@@ -1508,8 +1508,10 @@ def main():
         load=lambda: window.editor.open(args[0])
         QtCore.QTimer.singleShot(10,load)
     
-#    signal.signal(signal.SIGINT, lambda signal,frame : app.exit())#SIGSEGV, i wasnt looking for you...
-    signal.signal(signal.SIGINT, sigint)
+    timer = QtCore.QTimer()
+    timer.timeout.connect(lambda: None)
+    timer.start(50) #keep getting unstuck from the c pyqt loop to process ctrl-c
+A    signal.signal(signal.SIGINT, sigint)
     
     # It's exec_ because exec is a reserved word in Python
     sys.exit(app.exec_())

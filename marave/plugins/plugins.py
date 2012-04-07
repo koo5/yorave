@@ -109,14 +109,18 @@ class Plugin (object):
     @classmethod
     def initPlugins(self):
         l=[]
+        print 'my path is '+PATH
         for p in os.listdir(PATH):
             if p.endswith('.py') and p != 'plugins.py':
                 l.append(p)
         for p in l:
-            if hasattr(sys, 'frozen'):
+            try:
                 print __import__('plugins.'+p[:-3], level=-1)
-            else:
-                print __import__('marave.plugins.'+p[:-3], level=-1)
+                #trying plain 'plugins' first will avoid loading system-wide installed modules instead of 
+                #those from the directory of this file
+            except:
+                if not hasattr(sys, 'frozen'): #and i have no idea about this so im keeping the check in place
+                    print __import__('marave.plugins.'+p[:-3], level=-1)
 
     @classmethod
     def listPlugins(self):
